@@ -1,35 +1,35 @@
 	Main library
-Django Rest Framework - for creating an API\.n
-django_filters - for get filtered list of books (by year and by title)/n
+Django Rest Framework - for creating an API\n
+django_filters - for get filtered list of books (by year and by title)\n
 
 ______________________________________________________________________
 
-	Environment deployment
-sudo apt-get update 
-sudo apt-get -y upgrade
-sudo apt-get install -y python3-pip
-sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+		Environment deployment
+	sudo apt-get update 
+	sudo apt-get -y upgrade
+	sudo apt-get install -y python3-pip
+	sudo apt-get install build-essential libssl-dev libffi-dev python-dev
 
-git clone git@github.com:solomino09/library.git
-cd library/
+	git clone git@github.com:solomino09/library.git
+	cd library/
 
-	Virtual Environment
-python3 -m venv env_py36
-source env_py36/bin/activate
+		Virtual Environment
+	python3 -m venv env_py36
+	source env_py36/bin/activate
 
-	Ыoftware installation
-pip3 install -r requirements.txt
-	
-	DataBase dump
-sqlite3 db.sqlite3 < dump-2020-07-10_17-45.sql
+		Ыoftware installation
+	pip3 install -r requirements.txt
+		
+		DataBase dump
+	sqlite3 db.sqlite3 < dump-2020-07-10_17-45.sql
 
-./manage.py migrate
+	./manage.py migrate
 
-	Launch
-./manage.py runserver
+		Launch
+	./manage.py runserver
 
-	User - admin
-	Password - admin
+		User - admin
+		Password - admin
 ___________________________________________________________________
 
 
