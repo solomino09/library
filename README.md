@@ -1,11 +1,11 @@
 	Main library
-Django Rest Framework - for creating an API
-django_filters - for get filtered list of books (by year and by title)
+Django Rest Framework - for creating an API\.n
+django_filters - for get filtered list of books (by year and by title)/n
 
 ______________________________________________________________________
 
 	Environment deployment
-sudo apt-get update
+sudo apt-get update 
 sudo apt-get -y upgrade
 sudo apt-get install -y python3-pip
 sudo apt-get install build-essential libssl-dev libffi-dev python-dev
