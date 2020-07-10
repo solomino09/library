@@ -1,6 +1,6 @@
-	Main library
-Django Rest Framework - for creating an API\n
-django_filters - for get filtered list of books (by year and by title)\n
+		Main library
+	Django Rest Framework - for creating an API
+	django_filters - for get filtered list of books (by year and by title)
 
 ______________________________________________________________________
 
