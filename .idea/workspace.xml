@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff595597-f53a-41d9-b533-5888f18387e1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/catalog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/dump-2020-07-10_17-45.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/library/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/library/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/sample.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,5 +45,9 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1594383397164" />
+    <state x="67" y="27" width="1453" height="1009" key="dock-window-1" timestamp="1594586724328">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="67" y="27" width="1453" height="1009" key="dock-window-1/67.27.1853.1053@67.27.1853.1053" timestamp="1594586724328" />
   </component>
 </project>

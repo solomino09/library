@@ -10,6 +10,7 @@ from django.urls import reverse, reverse_lazy
 from django.shortcuts import render, get_object_or_404
 from rest_framework import generics, status
 from rest_framework.generics import get_object_or_404
+from rest_framework.permissions import IsAuthenticated  # <-- protect
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import Book, Author, BookInstance, Genre
@@ -174,6 +175,7 @@ class BookDelete(PermissionRequiredMixin, DeleteView):
 
 #for api
 class AuthorsView(APIView):
+    permission_classes = (IsAuthenticated,)             # <-- protect
     def get(self, request):
         authors = Author.objects.all()
         serializer = AuthorsSerializer(authors, many=True)
@@ -181,6 +183,7 @@ class AuthorsView(APIView):
 
 
 class AuthorView(APIView):
+    permission_classes = (IsAuthenticated,)             # <-- protect
     def get(self, request, pk):
         autor = Author.objects.filter(id=pk)
         serializer = AuthorSerializer(autor, many=True)
@@ -190,6 +193,7 @@ class AuthorView(APIView):
 
 
 class AuthorBooksView(APIView):
+    permission_classes = (IsAuthenticated,)             # <-- protect
     def get(self, request, pk):
         autor = Author.objects.filter(id=pk)
         serializer = AuthorBoooksSerializer(autor, many=True)
@@ -208,6 +212,7 @@ class AuthorBooksView(APIView):
 
 
 class BooksView(APIView):
+    permission_classes = (IsAuthenticated,)             # <-- protect
     def get(self, request):
         books = Book.objects.all()
         serializer_books = BooksSerializer(books, many=True)
@@ -223,6 +228,7 @@ class BooksView(APIView):
 
 
 class BookView(APIView):
+    permission_classes = (IsAuthenticated,)             # <-- protect
     def get(self, request, pk):
         book = Book.objects.filter(id=pk)
         serializer_book = BooksSerializer(book, many=True)
@@ -235,6 +241,7 @@ class BookView(APIView):
 
 
 class BooksList(generics.ListAPIView):
+    permission_classes = (IsAuthenticated,)             # <-- protect
     queryset = BookInstance.objects.all()
     serializer_class = BooksInstanceSerializer
     filter_backends = (filters.DjangoFilterBackend,)
